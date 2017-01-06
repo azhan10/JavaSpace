@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="273.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Controller.indexController">
+  <children>
+    <Button id="btnRegister_Direct" layoutX="339.0" layoutY="152.0" mnemonicParsing="false" onAction="#goToRegister" prefHeight="63.0" prefWidth="122.0" text="Register" />
+    <Button id="btnSignIn_Direct" layoutX="140.0" layoutY="152.0" mnemonicParsing="false" onAction="#gotoSignIn" prefHeight="63.0" prefWidth="122.0" text="Sign in" />
+    <Label layoutX="206.0" layoutY="32.0" text="Welcome to Lets Talk">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <Label layoutX="192.0" layoutY="236.0" prefWidth="256.0" text="Created by Azhan Rashid U1476904">
+      <font>
+        <Font size="13.0" />
+      </font>
+    </Label>
+  </children>
+</Pane>

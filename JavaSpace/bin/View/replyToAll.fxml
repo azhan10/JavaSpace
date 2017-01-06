@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="705.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Controller.replyToAllController">
+  <children>
+    <ListView fx:id="messageList" layoutX="29.0" layoutY="57.0" prefHeight="284.0" prefWidth="451.0" />
+    <TextArea fx:id="messageBox" layoutX="29.0" layoutY="348.0" prefHeight="84.0" prefWidth="451.0" />
+    <Button fx:id="say_button" layoutX="365.0" layoutY="444.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="33.0001220703125" prefWidth="135.0" text="Send Message" />
+    <Button fx:id="leaveInterface" layoutX="510.0" layoutY="456.0" mnemonicParsing="false" onAction="#leaveInterface" prefHeight="33.0001220703125" prefWidth="130.0" text="Leave Chat" />
+    <ListView fx:id="userlist" layoutX="493.0" layoutY="57.0" prefHeight="284.0" prefWidth="164.0" />
+    <Label fx:id="everyoneHeader" alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="527.0" minHeight="17.0" prefHeight="26.62109375" prefWidth="443.0" textAlignment="CENTER">
+      <font>
+        <Font size="14.0" fx:id="x1" />
+      </font>
+    </Label>
+    <CheckBox fx:id="notification" font="$x1" layoutX="510.0" layoutY="369.0" mnemonicParsing="false" text="Notification" />
+    <Button fx:id="btn_deleteMessage" layoutX="510.0" layoutY="497.0" mnemonicParsing="false" onAction="#btn_deleteMessage" prefHeight="33.000099999997474" prefWidth="140.0" text="Delete Message" textFill="BLACK" />
+    <Label fx:id="replyToAllNotification" alignment="CENTER" contentDisplay="CENTER" font="$x1" layoutX="37.0" layoutY="487.0" prefHeight="26.62109375" prefWidth="443.0" textAlignment="CENTER" />
+    <CheckBox fx:id="twoMinOption" font="$x1" layoutX="510.0" layoutY="411.0" mnemonicParsing="false" text="2 Minutes" />
+    <CheckBox fx:id="oneMinOption" font="$x1" layoutX="510.0" layoutY="390.0" mnemonicParsing="false" text="1 Minute" />
+    <MenuBar layoutX="0.0" layoutY="-1.0" prefHeight="26.62109375" prefWidth="705.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Close" onAction="#closeProgram" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <Label font="$x1" layoutX="228.0" layoutY="38.0" text="Messages" />
+    <Label font="$x1" layoutX="558.0" layoutY="38.0" text="Users" />
+    <Button fx:id="btn_refresh" layoutX="242.0" layoutY="444.0" mnemonicParsing="false" onAction="#btn_refresh" prefHeight="33.0001220703125" prefWidth="98.0" text="Refresh" />
+  </children>
+</Pane>

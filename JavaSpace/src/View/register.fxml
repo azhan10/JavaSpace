@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="565.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Controller.registerController">
+  <children>
+    <PasswordField fx:id="register_Password" layoutX="159.0" layoutY="203.0"  prefHeight="44.0" prefWidth="283.0" />
+    <PasswordField fx:id="register_PasswordRetype" layoutX="159.0" layoutY="262.0" prefHeight="44.0" prefWidth="283.0" />
+    <TextField fx:id="register_Username" layoutX="159.0" layoutY="141.0" prefHeight="44.0" prefWidth="283.0" />
+    <Label layoutX="38.0" layoutY="153.0" prefHeight="21.0" prefWidth="70.0" text="Username" />
+    <Label layoutX="38.0" layoutY="217.0" prefHeight="21.0" prefWidth="70.0" text="Password" />
+    <Label fx:id="registerNotification" alignment="CENTER" contentDisplay="CENTER" layoutX="97.0" layoutY="102.0" prefHeight="21.28125" prefWidth="400.0" textAlignment="CENTER" textFill="RED">
+      <font>
+        <Font size="16.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Button layoutX="159.0" layoutY="331.0" mnemonicParsing="false" onAction="#goto_SignIn" prefHeight="44.0" prefWidth="104.0" text="Sign In Page" />
+    <Button layoutX="338.0" layoutY="331.0" mnemonicParsing="false" onAction="#registerUserbtn" prefHeight="44.0" prefWidth="104.0" text="Register" />
+    <Label layoutX="206.0" layoutY="399.0" text="Created by Azhan Rashid U1476904" />
+    <Label font="$x1" layoutX="184.0" layoutY="62.0" text="Please register your new account" />
+    <Label  layoutX="38.0" layoutY="274.0" text="Retype Password" />
+  </children>
+</Pane>
